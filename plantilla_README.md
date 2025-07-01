@@ -7,14 +7,13 @@ Este proyecto realiza un análisis [exploratorio / predictivo / descriptivo] de 
 
 ## 📚 Tabla de Contenidos
 
-- [🎯 Propósito](#propósito)
-- [📦 Conjunto de Datos](#conjunto-de-datos)
-- [🧪 Pasos del Proyecto](#pasos-del-proyecto)
-- [🛠️ Tecnologías](#tecnologías)
-- [⚙️ Instalación](#instalación)
-- [🚀 Uso](#uso)
-- [📈 Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
-- [👤 Autores](#autores)
+- [🎯 Propósito](#-propósito)
+- [📦 Conjunto de Datos](#-conjunto-de-datos)
+- [🧪 Desarrollo del Proyecto](#-desarrollo-del-proyecto)
+- [📈 Conclusiones y Recomendaciones](#-conclusiones-y-recomendaciones)
+- [🛠️ Tecnologías](#️-tecnologías)
+- [⚙️ Instalación](#️-instalación)
+- [👤 Autor](#-autor)
 
 ---
 
@@ -37,7 +36,7 @@ Fuente: [Nombre de la fuente o “datos simulados/ficticios”].
 
 ---
 
-## 🧪 Pasos del Proyecto
+## 🧪 Desarrollo del Proyecto
 
 1. **Carga y exploración inicial de los datos**:
    - Exploración básica con `.head()`, `.info()`, `.describe()`, etc.
@@ -56,6 +55,14 @@ Fuente: [Nombre de la fuente o “datos simulados/ficticios”].
 
 6. **Conclusiones y recomendaciones**:
    - Síntesis de hallazgos clave y propuestas de acción.
+
+---
+
+## 📈 Conclusiones y Recomendaciones
+
+- [Insight 1]
+- [Insight 2]
+- [Recomendación práctica o estratégica basada en los datos]
 
 ---
 
@@ -108,13 +115,6 @@ python -m venv venv
     ```
     pip install numpy pandas matplotlib seaborn scikit-learn
     ```
----
-
-## 📈 Conclusiones y Recomendaciones
-
-- [Insight 1]
-- [Insight 2]
-- [Recomendación práctica o estratégica basada en los datos]
 
 ---
 
