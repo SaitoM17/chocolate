@@ -24,7 +24,7 @@ WHERE Amount LIKE '%,%';
 UPDATE chocolatesales
 SET Amount = TRIM(Amount);
 
--- 3.-Verificaciónde eliminación '$'
+-- 3.-Verificación de eliminación '$' y ','
 SELECT Amount FROM chocolatesales;
 
 --- # Actualizar la columna 'Amount' de TEXT a INT
