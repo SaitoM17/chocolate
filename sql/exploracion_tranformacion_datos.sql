@@ -26,3 +26,14 @@ SET Amount = TRIM(Amount);
 
 -- 3.-Verificaciónde eliminación '$'
 SELECT Amount FROM chocolatesales;
+
+
+-- # Actualizar la columna 'Date' de text a Date 
+
+-- 1.- Dar formato de fecha a la columna 'Date'
+UPDATE chocolatesales
+SET Date = STR_TO_DATE('%d/%m/%Y')
+WHERE Date IS NOT NULL;
+
+ALTER TABLE chocolatesales
+MODIFY COLUMN Date DATE;
