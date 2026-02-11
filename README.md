@@ -27,12 +27,14 @@ El objetivo de este proyecto es [objetivo general del análisis], con el fin de 
 
 El conjunto de datos utilizado contiene las siguientes columnas:
 
-- `NombreColumna1`: [Descripción]
-- `NombreColumna2`: [Descripción]
-- `NombreColumna3`: [Descripción]
-- `...`
+- `Sales Person`: El nombre del vendedor responsable de la venta.
+- `Country`: El país donde se realizo la venta.
+- `Product`: El nombre y tipo del producto vendido.
+- `Date`: Fecha en que se produjo la transacción de ventas(formato DD/MM/AAAA).
+- `Amount`: El monto total de ventas de la transacción, expresado en dólares estadounidenses.
+- `Boxes Shipped`: El número de cajas de productos enviadas como parte de la transacción.
 
-Fuente: [Nombre de la fuente o “datos simulados/ficticios”].
+Fuente: [Chocolate Sales](https://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales).
 
 ---
 
