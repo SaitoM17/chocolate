@@ -40,3 +40,6 @@ WHERE Date IS NOT NULL;
 
 ALTER TABLE chocolatesales
 MODIFY COLUMN Date DATE;
+
+-- 2.-Verificación de modificación de tabla Date
+SELECT Date FROM chocolatesales;
