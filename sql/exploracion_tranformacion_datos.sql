@@ -13,6 +13,16 @@ SELECT Amount FROM chocolatesales;
 
 -- 2.-Eliminar caracteres  '$' y ',' de la columna Amount
 UPDATE chocolatesales
-SET Amount = REPLACE(REPLACE(Amount, '$',''), ',', '');
+SET Amount = REPLACE(Amount, '$','')
+WHERE Amount LIKE '%$%';
 
--- 3.-Verificaciónde eliminación 
+UPDATE chocolatesales
+SET Amount = REPLACE(Amount, ',','')
+WHERE Amount LIKE '%,%';
+
+-- Eliminación de espacio en blanco
+UPDATE chocolatesales
+SET Amount = TRIM(Amount);
+
+-- 3.-Verificaciónde eliminación '$'
+SELECT Amount FROM chocolatesales;
