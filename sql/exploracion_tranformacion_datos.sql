@@ -35,7 +35,7 @@ MODIFY COLUMN Amount INT;
 
 -- 1.- Dar formato de fecha a la columna 'Date'
 UPDATE chocolatesales
-SET Date = STR_TO_DATE('%d/%m/%Y')
+SET Date = STR_TO_DATE(Date, '%d/%m/%Y')
 WHERE Date IS NOT NULL;
 
 ALTER TABLE chocolatesales
