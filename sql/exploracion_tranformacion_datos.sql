@@ -58,3 +58,7 @@ FROM
 	chocolatesales;
 
 -- 2.-Verificar si hay valores duplicados
+SELECT `Sales Person`, Country, Product, Date, Amount, COUNT(*) as repeticiones
+FROM chocolatesales
+GROUP BY `Sales Person`, Country, Product, Date, Amount
+HAVING COUNT(*) > 1;
