@@ -47,5 +47,14 @@ SELECT Date FROM chocolatesales;
 -- # Verificación de la calidad de los datos
 
 -- 1.-Verificar si hay valores nulos
+SELECT 
+	SUM(CASE WHEN 'Sales Person' IS NULL THEN 1 ELSE 0 END) AS SalesPerson,
+	SUM(CASE WHEN Country IS NULL THEN 1 ELSE 0 END) AS Country,
+	SUM(CASE WHEN Product IS NULL THEN 1 ELSE 0 END) AS Product,
+	SUM(CASE WHEN Date IS NULL THEN 1 ELSE 0 END ) AS Date,
+	sum(CASE WHEN Amount IS NULL THEN 1 ELSE 0 END) AS Amount,
+	SUM(CASE WHEN 'Boxes Shipped' IS NULL THEN 1 ELSE 0 END) AS BoxesShipped
+FROM
+	chocolatesales;
 
 -- 2.-Verificar si hay valores duplicados
