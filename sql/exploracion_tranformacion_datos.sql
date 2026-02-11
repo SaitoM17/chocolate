@@ -43,3 +43,9 @@ MODIFY COLUMN Date DATE;
 
 -- 2.-Verificación de modificación de tabla Date
 SELECT Date FROM chocolatesales;
+
+-- # Verificación de la calidad de los datos
+
+-- 1.-Verificar si hay valores nulos
+
+-- 2.-Verificar si hay valores duplicados
