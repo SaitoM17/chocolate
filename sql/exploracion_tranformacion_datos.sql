@@ -2,8 +2,6 @@
 SELECT * FROM chocolatesales;
 DESCRIBE chocolatesales;
 
-SELECT 'Sales Person' FROM chocolatesales;
-
 -- # Actualizar le tipo de datos de columnas 'Date' y 'Amount'
 
 -- Columna Amount
