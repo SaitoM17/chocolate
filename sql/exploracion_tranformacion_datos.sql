@@ -27,6 +27,11 @@ SET Amount = TRIM(Amount);
 -- 3.-Verificaciónde eliminación '$'
 SELECT Amount FROM chocolatesales;
 
+--- # Actualizar la columna 'Amount' de TEXT a INT
+
+-- 1.- Cambiar Text a INT
+ALTER TABLE chocolatesales
+MODIFY COLUMN Amount INT;
 
 -- # Actualizar la columna 'Date' de text a Date 
 
