@@ -118,6 +118,27 @@ SELECT Date FROM chocolatesales;
 
 Por último se verificó la calidad de los datos en búsqueda de valores nulos y duplicados, en dicha búsqueda no se encontró ningún problema.
 
+```sql
+-- # Verificación de la calidad de los datos
+
+-- 1.-Verificar si hay valores nulos
+SELECT 
+	SUM(CASE WHEN 'Sales Person' IS NULL THEN 1 ELSE 0 END) AS SalesPerson,
+	SUM(CASE WHEN Country IS NULL THEN 1 ELSE 0 END) AS Country,
+	SUM(CASE WHEN Product IS NULL THEN 1 ELSE 0 END) AS Product,
+	SUM(CASE WHEN Date IS NULL THEN 1 ELSE 0 END ) AS Date,
+	sum(CASE WHEN Amount IS NULL THEN 1 ELSE 0 END) AS Amount,
+	SUM(CASE WHEN 'Boxes Shipped' IS NULL THEN 1 ELSE 0 END) AS BoxesShipped
+FROM
+	chocolatesales;
+
+-- 2.-Verificar si hay valores duplicados
+SELECT `Sales Person`, Country, Product, Date, Amount, COUNT(*) as repeticiones
+FROM chocolatesales
+GROUP BY `Sales Person`, Country, Product, Date, Amount
+HAVING COUNT(*) > 1;
+```
+
 2. **Limpieza y preprocesamiento**:
    - Manejo de valores nulos, duplicados, formatos y conversiones de fechas.
 
