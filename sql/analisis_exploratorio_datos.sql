@@ -13,3 +13,11 @@ FROM
 	chocolatesales;
     
 -- Se han registrado 3282 transacciones desde 2022 hasta el 2025
+
+### Ticket promedio
+SELECT
+	AVG(Amount) AS TicketPromedio
+FROM
+	chocolatesales;
+    
+-- El promedio de ticket es de $ 6030.3422 dolares
