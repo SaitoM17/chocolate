@@ -73,7 +73,24 @@ En la exploración inicial de de los datos de encotnraron con inconsistencias en
 En el campo `Amount` se encontraron inconsistencias en los registros ya que contaban con los caracteres de **$**, **,** y el campo tenia el formato de **TEXT** dichas incosistencias fueron tratadas eliminand los caracteres y realizando una transformación del campo.
 
 ```sql
+-- 1.-Exploraciónde columna 'Amount'
+SELECT Amount FROM chocolatesales;
 
+-- 2.-Eliminar caracteres  '$' y ',' de la columna Amount
+UPDATE chocolatesales
+SET Amount = REPLACE(Amount, '$','')
+WHERE Amount LIKE '%$%';
+
+UPDATE chocolatesales
+SET Amount = REPLACE(Amount, ',','')
+WHERE Amount LIKE '%,%';
+
+-- Eliminación de espacio en blanco
+UPDATE chocolatesales
+SET Amount = TRIM(Amount);
+
+-- 3.-Verificación de eliminación '$' y ','
+SELECT Amount FROM chocolatesales;
 ```
 
 En el campo `Date` tenia el formato de **TEXT** lo que representaba un problema para futuros analisis en los que se llegara a requerir operaciones con fechas, debido a esto se realizo un proceso de transformación.
