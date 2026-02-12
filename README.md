@@ -67,8 +67,20 @@ Fuente: [Chocolate Sales](https://www.kaggle.com/datasets/saidaminsaidaxmadov/ch
 
 ## 🧪 Desarrollo del Proyecto
 
-1. **Carga y exploración inicial de los datos**:
-   - Exploración básica con `.head()`, `.info()`, `.describe()`, etc.
+### **Exploración inicial de los datos - Limpieza y prepocesamiento**
+En la exploración inicial de de los datos de encotnraron con inconsistencias en los campos `Date` y `Amount`.
+
+En el campo `Amount` se encontraron inconsistencias en los registros ya que contaban con los caracteres de **$**, **,** y el campo tenia el formato de **TEXT** dichas incosistencias fueron tratadas eliminand los caracteres y realizando una transformación del campo.
+
+```sql
+
+```
+
+En el campo `Date` tenia el formato de **TEXT** lo que representaba un problema para futuros analisis en los que se llegara a requerir operaciones con fechas, debido a esto se realizo un proceso de transformación.
+
+```sql
+
+```
 
 2. **Limpieza y preprocesamiento**:
    - Manejo de valores nulos, duplicados, formatos y conversiones de fechas.
