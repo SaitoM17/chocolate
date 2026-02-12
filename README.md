@@ -91,6 +91,12 @@ SET Amount = TRIM(Amount);
 
 -- 3.-Verificación de eliminación '$' y ','
 SELECT Amount FROM chocolatesales;
+
+--- # Actualizar la columna 'Amount' de TEXT a INT
+
+-- 1.- Cambiar Text a INT
+ALTER TABLE chocolatesales
+MODIFY COLUMN Amount INT;
 ```
 
 En el campo `Date` tenia el formato de **TEXT** lo que representaba un problema para futuros analisis en los que se llegara a requerir operaciones con fechas, debido a esto se realizo un proceso de transformación.
