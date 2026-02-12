@@ -24,4 +24,4 @@ FROM
     
 -- El promedio de ticket es de $ 6030.3422 dolares
 
-### Ventas por mes
+### Ventas por tiempo
