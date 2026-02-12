@@ -1,7 +1,7 @@
 # 📊 Chocolate
 # Analisis sobre la venta del Chcocolate
 
-Este proyecto realiza un análisis [exploratorio / predictivo / descriptivo] de [tema del proyecto]. El conjunto de datos incluye información sobre [breve descripción del contenido del dataset].
+Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global. El conjunto de datos incluye información sobre registros transaccionales detallados de las ventas globales de productos de chocolate desde julio de 2022 hasta diciembre de 2025.
 
 ---
 
