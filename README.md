@@ -102,7 +102,18 @@ MODIFY COLUMN Amount INT;
 En el campo `Date` tenia el formato de **TEXT** lo que representaba un problema para futuros analisis en los que se llegara a requerir operaciones con fechas, debido a esto se realizo un proceso de transformación.
 
 ```sql
+-- # Actualizar la columna 'Date' de text a Date 
 
+-- 1.- Dar formato de fecha a la columna 'Date'
+UPDATE chocolatesales
+SET Date = STR_TO_DATE(Date, '%d/%m/%Y')
+WHERE Date IS NOT NULL;
+
+ALTER TABLE chocolatesales
+MODIFY COLUMN Date DATE;
+
+-- 2.-Verificación de modificación de tabla Date
+SELECT Date FROM chocolatesales;
 ```
 
 2. **Limpieza y preprocesamiento**:
