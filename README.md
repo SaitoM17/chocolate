@@ -10,7 +10,7 @@ Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global
 - [🎯 Propósito](#-propósito)
 - [📦 Conjunto de Datos](#-conjunto-de-datos)
 - [🧪 Desarrollo del Proyecto](#-desarrollo-del-proyecto)
-- [📈 Conclusiones y Recomendaciones](#-conclusiones-y-recomendaciones)
+- [💡 Insights claves](#-insights-claves)
 - [🛠️ Tecnologías](#️-tecnologías)
 - [⚙️ Instalación](#️-instalación)
 - [👤 Autor](#-autor)
@@ -60,7 +60,7 @@ Fuente: [Chocolate Sales](https://www.kaggle.com/datasets/saidaminsaidaxmadov/ch
 
 ---
 
-## 📈 Conclusiones y Recomendaciones
+## 💡 Insights claves
 
 - [Insight 1]
 - [Insight 2]
