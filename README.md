@@ -20,7 +20,33 @@ Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global
 
 ## 🎯 Propósito
 
-El objetivo de este proyecto es [objetivo general del análisis], con el fin de [impacto esperado, decisiones que se tomarán, etc.].
+El objetivo de este proyecto es determinar las ventas globales del chocolate, con el fin de responder a las siguientes preguntas:
+* ¿Cómo están las ventas?
+* ¿Estamos creciendo?
+* ¿Qué productos impulsan el negocio?
+* ¿Dónde hay oportunidad?
+
+Obtener métricas bases:
+* KPI General
+   - Ventas totales
+   - Total transacciones
+   - Ticket promedio
+
+* Ventas por mes
+   - Año
+   - Mes
+   - Ventas
+   - Crecimiento MoM
+
+* Top productos
+   - Ventas por producto
+   - Ranking (RANK())
+
+* Ventas por región
+   - Region con la mayor ventas
+   - Region con la menor ventas
+   - Producto más vendido por región
+   - Producto menos vendido por región
 
 ---
 
