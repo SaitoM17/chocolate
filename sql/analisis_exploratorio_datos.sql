@@ -25,3 +25,17 @@ FROM
 -- El promedio de ticket es de $ 6030.3422 dolares
 
 ### Ventas por tiempo
+
+# Ventas por año
+SELECT
+	YEAR(Date) AS Annio,
+    SUM(Amount) AS Ventas
+FROM
+	chocolatesales
+GROUP BY
+	Annio;
+
+-- Las ventas por año 
+-- 2022 ->	$ 6,183,625
+-- 2023 ->	$ 6,643,385
+-- 2024 ->	$ 6,964,573
