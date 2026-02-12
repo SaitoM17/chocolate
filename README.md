@@ -116,6 +116,8 @@ MODIFY COLUMN Date DATE;
 SELECT Date FROM chocolatesales;
 ```
 
+Por último se verificó la calidad de los datos en búsqueda de valores nulos y duplicados, en dicha búsqueda no se encontró ningún problema.
+
 2. **Limpieza y preprocesamiento**:
    - Manejo de valores nulos, duplicados, formatos y conversiones de fechas.
 
