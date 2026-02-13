@@ -79,3 +79,18 @@ LIMIT
 -- Se registro una disminución de -7.94% en el mes de agosto en comparación del mes de julio.
 
 ### TOP Productos
+
+# Ventas por productos
+SELECT
+	Product,
+    SUM(Amount) AS Ventas
+FROM
+	chocolatesales
+GROUP BY
+	Product
+ORDER BY
+	Ventas DESC
+LIMIT 
+	10;
+
+-- Se obtuvieron los Top 10 productos
