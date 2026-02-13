@@ -111,3 +111,18 @@ LIMIT
 	1;
 
 -- Australia es el país que tiene más ventas con  $3,646,458 por los 3 años(2022,2023 y 2024)
+
+-- Región con menos ventas
+SELECT
+	Country,
+    SUM(Amount) AS Ventas
+FROM
+	chocolatesales
+GROUP BY
+	Country
+ORDER BY
+	Ventas ASC
+LIMIT
+	1;
+    
+-- New Zealand es el país con menos ventas con $ 3,043,642 por los 3 años(2022,2023 y 2024)
