@@ -151,3 +151,28 @@ WHERE
 	ranking <= 5;
 
 -- Se obtuvieron los top 5 de productos con más ventas de cada país.
+
+# Productos menos vendidos por país
+WITH ResumenVentas AS (
+    SELECT 
+        Country, 
+        Product, 
+        SUM(Amount) AS Total,
+        RANK() OVER (PARTITION BY Country ORDER BY SUM(Amount) ASC) as ranking
+    FROM 
+		chocolatesales
+    GROUP BY 
+		Country, 
+        Product
+)
+SELECT 
+	ranking, 
+    Country, 
+    Product, 
+    Total
+FROM 
+	ResumenVentas
+WHERE 
+	ranking <= 5;
+
+-- Se obtuvieron los top 5 de productos con menos ventas
