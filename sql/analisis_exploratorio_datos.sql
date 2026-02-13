@@ -96,3 +96,18 @@ LIMIT
 -- Se obtuvieron los Top 10 productos
 
 ### Ventas por región
+
+-- Región con más ventas
+SELECT
+	Country,
+    SUM(Amount) AS Ventas
+FROM
+	chocolatesales
+GROUP BY
+	Country
+ORDER BY
+	Ventas DESC
+LIMIT
+	1;
+
+-- Australia es el país que tiene más ventas con  $3,646,458 por los 3 años(2022,2023 y 2024)
