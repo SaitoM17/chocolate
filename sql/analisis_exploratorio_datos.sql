@@ -53,3 +53,27 @@ ORDER BY
 
 -- Se obtuvieron las ventas por cada mes, con excepción de los meses de septiembre, octubre, noviembre y diciembre, por alguna razon la base de datos
 -- no cuenta con estos datos.
+
+# Crecimiento MoM    
+WITH tabla1 AS(
+	SELECT
+		SUM(Amount) AS Ventas,
+		MONTH(Date) AS Mes,
+		RANK() OVER (ORDER BY MONTH(Date) DESC) AS rango
+	FROM
+		chocolatesales
+	WHERE
+		YEAR(Date) = 2024
+	GROUP BY
+		Mes
+)
+SELECT
+    (SELECT Ventas FROM tabla1 WHERE rango = 1) AS MesActual8,
+    (SELECT Ventas FROM tabla1 WHERE rango = 2) AS MesAnterior7,
+    ROUND((((SELECT Ventas FROM tabla1 WHERE rango = 1) - (SELECT Ventas FROM tabla1 WHERE rango = 2)) / (SELECT Ventas FROM tabla1 WHERE rango = 2)) * 100,2) AS MoM
+FROM 
+	tabla1
+LIMIT 
+	1;
+
+-- Se registro una disminución de -7.94% en el mes de agosto en comparación del mes de julio.
