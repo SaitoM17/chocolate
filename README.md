@@ -1,7 +1,7 @@
 # 📊 Chocolate
 # Analisis sobre la venta del Chcocolate
 
-Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global. El conjunto de datos incluye información sobre registros transaccionales detallados de las ventas globales de productos de chocolate desde julio de 2022 hasta diciembre de 2025.
+Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global. El conjunto de datos incluye información sobre registros transaccionales detallados de las ventas globales de productos de chocolate desde enero de 2022 hasta agosto de 2024.
 
 ---
 
