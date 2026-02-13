@@ -94,3 +94,5 @@ LIMIT
 	10;
 
 -- Se obtuvieron los Top 10 productos
+
+### Ventas por región
