@@ -97,7 +97,7 @@ LIMIT
 
 ### Ventas por región
 
--- Región con más ventas
+#  Región con más ventas
 SELECT
 	Country,
     SUM(Amount) AS Ventas
@@ -112,7 +112,7 @@ LIMIT
 
 -- Australia es el país que tiene más ventas con  $3,646,458 por los 3 años(2022,2023 y 2024)
 
--- Región con menos ventas
+# Región con menos ventas
 SELECT
 	Country,
     SUM(Amount) AS Ventas
