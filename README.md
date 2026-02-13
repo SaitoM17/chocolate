@@ -35,12 +35,10 @@ Obtener métricas bases:
 * Ventas por mes
    - Año
    - Mes
-   - Ventas
    - Crecimiento MoM
 
 * Top productos
    - Ventas por producto
-   - Ranking (RANK())
 
 * Ventas por región
    - Region con la mayor ventas
