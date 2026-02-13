@@ -126,3 +126,28 @@ LIMIT
 	1;
     
 -- New Zealand es el país con menos ventas con $ 3,043,642 por los 3 años(2022,2023 y 2024)
+
+# Productos más vendidos por región
+WITH ResumenVentas AS (
+    SELECT 
+        Country, 
+        Product, 
+        SUM(Amount) AS Total,
+        RANK() OVER (PARTITION BY Country ORDER BY SUM(Amount) DESC) as ranking
+    FROM 
+		chocolatesales
+    GROUP BY 
+		Country, 
+        Product
+)
+SELECT 
+	ranking, 
+    Country, 
+    Product, 
+    Total
+FROM 
+	ResumenVentas
+WHERE 
+	ranking <= 5;
+
+-- Se obtuvieron los top 5 de productos con más ventas de cada país.
