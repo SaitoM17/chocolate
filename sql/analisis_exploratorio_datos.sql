@@ -77,3 +77,5 @@ LIMIT
 	1;
 
 -- Se registro una disminución de -7.94% en el mes de agosto en comparación del mes de julio.
+
+### TOP Productos
