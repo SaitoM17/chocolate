@@ -39,3 +39,17 @@ GROUP BY
 -- 2022 ->	$ 6,183,625
 -- 2023 ->	$ 6,643,385
 -- 2024 ->	$ 6,964,573
+
+# Ventas por mes
+SELECT
+	MONTH(Date) AS Mes,
+    SUM(Amount) AS Ventas
+FROM
+	chocolatesales
+GROUP BY
+	Mes
+ORDER BY
+	Mes DESC;
+
+-- Se obtuvieron las ventas por cada mes, con excepción de los meses de septiembre, octubre, noviembre y diciembre, por alguna razon la base de datos
+-- no cuenta con estos datos.
