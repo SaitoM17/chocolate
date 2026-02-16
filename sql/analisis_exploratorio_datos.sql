@@ -87,15 +87,16 @@ ORDER BY
 
 # Ventas por productos(Amount - Dolares)
 SELECT
-	Product,
-    SUM(Amount) AS Ventas
+    Product,
+    SUM(Amount) AS Ventas,
+    CONCAT(ROUND((SUM(Amount) / (SELECT SUM(Amount) FROM chocolatesales)) * 100, 2), '%') AS Porcentaje
 FROM
-	chocolatesales
+    chocolatesales
 GROUP BY
-	Product
+    Product
 ORDER BY
-	Ventas DESC
-LIMIT 
+    Ventas DESC
+LIMIT
 	10;
 
 -- Se obtuvieron los Top 10 productos
