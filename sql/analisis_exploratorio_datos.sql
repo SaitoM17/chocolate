@@ -43,13 +43,13 @@ GROUP BY
 # Ventas por mes
 SELECT
 	MONTH(Date) AS Mes,
-    SUM(Amount) AS Ventas
+    CONCAT('$ ',SUM(Amount)) AS Ventas
 FROM
 	chocolatesales
 GROUP BY
 	Mes
 ORDER BY
-	Mes DESC;
+	Mes ASC;
 
 -- Se obtuvieron las ventas por cada mes, con excepción de los meses de septiembre, octubre, noviembre y diciembre, por alguna razon la base de datos
 -- no cuenta con estos datos.
