@@ -55,26 +55,31 @@ ORDER BY
 -- no cuenta con estos datos.
 
 # Crecimiento MoM    
-WITH tabla1 AS(
-	SELECT
-		SUM(Amount) AS Ventas,
-		MONTH(Date) AS Mes,
-		RANK() OVER (ORDER BY MONTH(Date) DESC) AS rango
-	FROM
-		chocolatesales
-	WHERE
-		YEAR(Date) = 2024
-	GROUP BY
-		Mes
+WITH VentasMensuales AS (
+    SELECT
+        MONTH(Date) AS Mes,
+        SUM(Amount) AS Ventas_Actuales
+    FROM
+        chocolatesales
+    WHERE
+        YEAR(Date) = 2024
+    GROUP BY
+        Mes
 )
 SELECT
-    (SELECT Ventas FROM tabla1 WHERE rango = 1) AS MesActual8,
-    (SELECT Ventas FROM tabla1 WHERE rango = 2) AS MesAnterior7,
-    ROUND((((SELECT Ventas FROM tabla1 WHERE rango = 1) - (SELECT Ventas FROM tabla1 WHERE rango = 2)) / (SELECT Ventas FROM tabla1 WHERE rango = 2)) * 100,2) AS MoM
-FROM 
-	tabla1
-LIMIT 
-	1;
+    Mes,
+    Ventas_Actuales,
+    -- LAG obtiene la venta del mes anterior basándose en el orden del mes
+    LAG(Ventas_Actuales) OVER (ORDER BY Mes) AS Ventas_Anteriores,
+    -- Calculamos el porcentaje de crecimiento
+    ROUND(
+        ((Ventas_Actuales - LAG(Ventas_Actuales) OVER (ORDER BY Mes)) / 
+        LAG(Ventas_Actuales) OVER (ORDER BY Mes)) * 100, 
+    2) AS MoM_Porcentaje
+FROM
+    VentasMensuales
+ORDER BY
+    Mes;
 
 -- Se registro una disminución de -7.94% en el mes de agosto en comparación del mes de julio.
 
