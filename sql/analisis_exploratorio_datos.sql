@@ -10,7 +10,7 @@ FROM
 
 # Total de transacciones
 SELECT
-	COUNT('Sales Person') AS cantidad
+	COUNT(`Sales Person`) AS cantidad
 FROM
 	chocolatesales;
     
