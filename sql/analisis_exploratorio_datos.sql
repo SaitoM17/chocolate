@@ -72,10 +72,10 @@ SELECT
     -- LAG obtiene la venta del mes anterior basándose en el orden del mes
     LAG(Ventas_Actuales) OVER (ORDER BY Mes) AS Ventas_Anteriores,
     -- Calculamos el porcentaje de crecimiento
-    ROUND(
+    CONCAT(ROUND(
         ((Ventas_Actuales - LAG(Ventas_Actuales) OVER (ORDER BY Mes)) / 
         LAG(Ventas_Actuales) OVER (ORDER BY Mes)) * 100, 
-    2) AS MoM_Porcentaje
+    2), ' %' ) AS MoM_Porcentaje
 FROM
     VentasMensuales
 ORDER BY
