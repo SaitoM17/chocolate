@@ -103,16 +103,17 @@ LIMIT
 
 # Ventas por productos(Boxes Shipped - Cantidad)
 SELECT
-	Product,
-    SUM(`Boxes Shipped`) AS Cantidad
+    Product,
+    SUM(`Boxes Shipped`) AS Cantidad,
+    CONCAT(ROUND((SUM(`Boxes Shipped`) / (SELECT SUM(`Boxes Shipped`) FROM chocolatesales)) * 100, 2), '%') AS Porcentaje
 FROM
-	chocolatesales
+    chocolatesales
 GROUP BY
-	Product
+    Product
 ORDER BY
-	Cantidad DESC
-LIMIT 
-	10; 
+    Cantidad DESC
+LIMIT
+	10;
 
 -- Se obtuvieron el Top 10 productos más vendidos por cantidad
 
