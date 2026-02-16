@@ -95,6 +95,21 @@ LIMIT
 
 -- Se obtuvieron los Top 10 productos
 
+# Ventas por productos(Boxes Shipped - Cantidad)
+SELECT
+	Product,
+    SUM(`Boxes Shipped`) AS Cantidad
+FROM
+	chocolatesales
+GROUP BY
+	Product
+ORDER BY
+	Cantidad DESC
+LIMIT 
+	10; 
+
+-- Se obtuvieron el Top 10 productos más vendidos por cantidad
+
 ### Ventas por región
 
 #  Región con más ventas
