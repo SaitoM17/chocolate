@@ -80,7 +80,7 @@ LIMIT
 
 ### TOP Productos
 
-# Ventas por productos
+# Ventas por productos(Amount - Dolares)
 SELECT
 	Product,
     SUM(Amount) AS Ventas
