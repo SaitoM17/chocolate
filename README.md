@@ -91,12 +91,8 @@ Se realizó normalización de formatos, conversión de tipos y validación de ca
 
 ## 🛠️ Tecnologías
 
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook / Google Colab
-- [Otras herramientas que uses, como Scikit-learn, Plotly, etc.]
+- MySQL Workbench 8.0 CE
+- Power BI
 
 ---
 
