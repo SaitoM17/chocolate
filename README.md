@@ -70,8 +70,10 @@ Se identificaron inconsistencias en los campos Date y Amount.
 Se realizó normalización de formatos, conversión de tipos y validación de calidad de datos (nulos y duplicados).
 
 ### **Análisis exploratorio de datos (EDA)**
-
-
+* El negocio muestra desaceleración reciente pese al crecimiento histórico.
+* El portafolio presenta baja dependencia de productos individuales.
+* Existen diferencias regionales que sugieren oportunidades de optimización del catálogo.
+* Se detectaron vacíos de datos que afectan la lectura del desempeño real.
 
 ---
 
