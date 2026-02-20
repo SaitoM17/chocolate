@@ -137,20 +137,8 @@ GROUP BY `Sales Person`, Country, Product, Date, Amount
 HAVING COUNT(*) > 1;
 ```
 
-2. **Limpieza y preprocesamiento**:
-   - Manejo de valores nulos, duplicados, formatos y conversiones de fechas.
-
-3. **Análisis exploratorio de datos (EDA)**:
-   - [Ej. Distribución, correlaciones, agrupaciones, etc.]
-
-4. **Visualización de datos**:
-   - Uso de gráficos de barras, líneas, cajas, dispersión y mapas de calor.
-
-5. **Modelado o reportes (opcional)**:
-   - [Si aplica: modelos de ML, clustering, predicciones, etc.]
-
-6. **Conclusiones y recomendaciones**:
-   - Síntesis de hallazgos clave y propuestas de acción.
+### **Análisis exploratorio de datos (EDA)**
+   - [Ej. Distribución, correlaciones, agrupaciones, etc.
 
 ---
 
