@@ -78,6 +78,7 @@ Se realizó normalización de formatos, conversión de tipos y validación de ca
 ---
 
 ## 📌 Vista previa del dashboard
+![Vista Dashboard](reports/figures/vista1_dashboard.png)
 
 ---
 
