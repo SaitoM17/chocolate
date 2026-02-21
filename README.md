@@ -83,7 +83,7 @@ Se realizó normalización de formatos, conversión de tipos y validación de ca
 
 ## 💡 Recomendaciones
 
-### Optimización del portafolio por región
+### 1.-Optimización del portafolio por región
 Acción:
 * Priorizar inventario y visibilidad de SKUs top por región.
 * Reducir distribución de SKUs con bajo desempeño local.
@@ -95,7 +95,6 @@ Impacto esperado:
 * Incremento de conversión.
 
 ### 2.-Racionalización de SKUs de baja rotación
-
 Acción:
 * Identificar SKUs consistentemente en bottom 10% por región.
 * Evaluar descontinuación parcial o sustitución.
@@ -107,7 +106,6 @@ Impacto esperado:
 * Simplificación operativa.
 
 ### 3.-Análisis de estacionalidad y desaceleración
-
 Acción:
 * Modelar estacionalidad mensual.
 * Identificar meses críticos por producto y región.
@@ -119,7 +117,6 @@ Impacto esperado:
 * Mayor estabilidad de ingresos.
 
 ### 4.-Implementación de monitoreo continuo (dashboard operativo)
-
 Acción:
 
 * Definir alertas:
@@ -134,7 +131,6 @@ Impacto esperado:
 * Cultura data-driven.
 
 ### 5.-Gobernanza y calidad de datos
-
 Acción:
 * Validación automática de completitud temporal.
 * Pipeline que marque periodos faltantes.
