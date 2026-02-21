@@ -1,7 +1,6 @@
-# 📊 Chocolate
-# Analisis sobre la venta del Chcocolate
+# Análisis de desempeño comercial y optimización de portafolio – Chocolate Retail
 
-Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global. El conjunto de datos incluye información sobre registros transaccionales detallados de las ventas globales de productos de chocolate desde enero de 2022 hasta agosto de 2024.
+Empresa retail global necesita entender desaceleración y desempeño regional para tomar decisiones de catálogo e inventario. El conjunto de datos usado cuenta con la información sobre registros transaccionales detallados de las ventas globales de productos de chocolate desde enero de 2022 hasta agosto de 2024.
 
 ---
 
@@ -11,7 +10,8 @@ Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global
 - [📦 Conjunto de Datos](#-conjunto-de-datos)
 - [🧪 Desarrollo del Proyecto](#-desarrollo-del-proyecto)
 - [📌 Vista previa del dashboard](#-vista-previa-del-dashboard)
-- [💡 Insights claves](#-insights-claves)
+- [💡 Recomendaciones](#-recomendaciones)
+- [📂 Archivos](#-reportes)
 - [🛠️ Tecnologías](#️-tecnologías)
 - [👤 Autor](#-autor)
 
@@ -19,31 +19,10 @@ Este proyecto realiza un análisis sobre las ventas del chocolate a nivel global
 
 ## 🎯 Propósito
 
-El objetivo de este proyecto es determinar las ventas globales del chocolate, con el fin de responder a las siguientes preguntas:
-* ¿Cómo están las ventas?
-* ¿Estamos creciendo?
-* ¿Qué productos impulsan el negocio?
-* ¿Dónde hay oportunidad?
-
-Obtener métricas bases:
-* KPI General
-   - Ventas totales
-   - Total transacciones
-   - Ticket promedio
-
-* Ventas por mes
-   - Año
-   - Mes
-   - Crecimiento MoM
-
-* Top productos
-   - Ventas por producto
-
-* Ventas por región
-   - Region con la mayor ventas
-   - Region con la menor ventas
-   - Producto más vendido por región
-   - Producto menos vendido por región
+Este análisis busca apoyar decisiones comerciales relacionadas con catálogo, inventario y planificación de ventas por medio de:
+* Evaluación del desempeño comercial
+* Detectar oportunidades de crecimiento
+* Optimizar portafolio
 
 ---
 
@@ -141,6 +120,18 @@ Impacto esperado:
 * Métricas confiables.
 * Mejor planificación.
 * Menos decisiones basadas en datos incompletos.
+
+--
+
+## 📂 Archivos
+
+Reportes: 
+   1.-[Informe de exploración y transformación](reports/Informe%20de%20exploracion%20y%20transformacion.docx)
+   2.-[Analisis del negocio](reports/Analisis%20del%20negocio.docx)
+
+SQL:
+   1.-[Exploración y transformación de datos](sql/exploracion_tranformacion_datos.sql)
+   2.-[Analisis exploratorio de datos](sql/analisis_exploratorio_datos.sql)
 
 ---
 
