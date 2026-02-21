@@ -96,9 +96,6 @@ Impacto esperado:
 
 ### 2.-Racionalización de SKUs de baja rotación
 
-Problema detectado:
-Bottom performers regionales podrían generar costos ocultos.
-
 Acción:
 * Identificar SKUs consistentemente en bottom 10% por región.
 * Evaluar descontinuación parcial o sustitución.
@@ -108,6 +105,18 @@ Impacto esperado:
 * Reducción de inventario muerto.
 * Mejora margen.
 * Simplificación operativa.
+
+### 3.-Análisis de estacionalidad y desaceleración
+
+Acción:
+* Modelar estacionalidad mensual.
+* Identificar meses críticos por producto y región.
+* Diseñar campañas preventivas en periodos débiles.
+
+Impacto esperado:
+* Suavizar volatilidad.
+* Mejor forecasting.
+* Mayor estabilidad de ingresos.
 
 ---
 
