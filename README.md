@@ -118,6 +118,21 @@ Impacto esperado:
 * Mejor forecasting.
 * Mayor estabilidad de ingresos.
 
+### Implementación de monitoreo continuo (dashboard operativo)
+
+Acción:
+
+* Definir alertas:
+   * Caídas MoM > X%.
+   * SKU que entra en bottom performers.
+   * Regiones con variación anómala.
+   * Periodos sin datos.
+
+Impacto esperado:
+* Decisiones más rápidas.
+* Menor dependencia de análisis manual.
+* Cultura data-driven.
+
 ---
 
 ## 🛠️ Tecnologías
