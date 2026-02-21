@@ -118,7 +118,7 @@ Impacto esperado:
 * Mejor forecasting.
 * Mayor estabilidad de ingresos.
 
-### Implementación de monitoreo continuo (dashboard operativo)
+### 4.-Implementación de monitoreo continuo (dashboard operativo)
 
 Acción:
 
@@ -132,6 +132,19 @@ Impacto esperado:
 * Decisiones más rápidas.
 * Menor dependencia de análisis manual.
 * Cultura data-driven.
+
+### 5.-Gobernanza y calidad de datos
+
+Acción:
+* Validación automática de completitud temporal.
+* Pipeline que marque periodos faltantes.
+* Documentar supuestos en reportes ejecutivos.
+* Explorar imputación o escenarios.
+
+Impacto esperado:
+* Métricas confiables.
+* Mejor planificación.
+* Menos decisiones basadas en datos incompletos.
 
 ---
 
