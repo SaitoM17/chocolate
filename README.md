@@ -81,11 +81,19 @@ Se realizó normalización de formatos, conversión de tipos y validación de ca
 
 ---
 
-## 💡 Insights claves
+## 💡 Recomendaciones
 
-- [Insight 1]
-- [Insight 2]
-- [Recomendación práctica o estratégica basada en los datos]
+### Optimización del portafolio por región
+Acción:
+* Priorizar inventario y visibilidad de SKUs top por región.
+* Reducir distribución de SKUs con bajo desempeño local.
+* Ajustar promociones según preferencias regionales.
+
+Impacto esperado:
+* Mejor rotación.
+* Menor costo logístico.
+* Incremento de conversión.
+
 
 ---
 
