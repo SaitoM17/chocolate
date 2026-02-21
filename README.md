@@ -94,6 +94,20 @@ Impacto esperado:
 * Menor costo logístico.
 * Incremento de conversión.
 
+### 2.-Racionalización de SKUs de baja rotación
+
+Problema detectado:
+Bottom performers regionales podrían generar costos ocultos.
+
+Acción:
+* Identificar SKUs consistentemente en bottom 10% por región.
+* Evaluar descontinuación parcial o sustitución.
+* Reasignar presupuesto a productos líderes.
+
+Impacto esperado:
+* Reducción de inventario muerto.
+* Mejora margen.
+* Simplificación operativa.
 
 ---
 
